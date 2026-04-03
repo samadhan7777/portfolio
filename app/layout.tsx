@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     description: 'Professional Full Stack Developer creating amazing web experiences',
     type: 'website',
   },
+  // Add this section here:
+  verification: {
+    google: 'google6c7a57c8d5d82687',
+  },
 }
 
 export default function RootLayout({
