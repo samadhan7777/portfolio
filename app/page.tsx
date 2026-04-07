@@ -12,7 +12,7 @@ import BackToTop from '@/components/ui/BackToTop'
 
 export default function Home() {
   return (
-    <main className="bg-[#0b1220] overflow-x-hidden">
+    <main className="overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />

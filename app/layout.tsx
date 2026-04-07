@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { ThemeProvider } from '@/components/layout/ThemeProvider'
 
 export const metadata: Metadata = {
   title: 'Samadhan | Full Stack Developer',
@@ -7,9 +8,9 @@ export const metadata: Metadata = {
   keywords: 'Full Stack Developer, React, Next.js, Tailwind CSS, Web Developer',
   authors: [{ name: 'Samadhan' }],
   icons: {
-    icon: '/images/brand/s_logo1.png',
-    shortcut: '/images/brand/s_logo1.png',
-    apple: '/images/brand/s_logo1.png',
+    icon: '/images/brand/favsam.jpg',
+    shortcut: '/images/brand/favsam.jpg',
+    apple: '/images/brand/favsam.jpg',
   },
   openGraph: {
     title: 'Samadhan | Full Stack Developer',
@@ -28,8 +29,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="font-sans bg-[#0b1220] text-slate-100">{children}</body>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <body className="font-sans bg-[#0b1220] text-slate-100">
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          <div className="relative z-10">{children}</div>
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

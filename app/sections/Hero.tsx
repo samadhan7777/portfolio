@@ -4,10 +4,12 @@ import Image from 'next/image'
 import { ArrowDown } from 'lucide-react'
 import { FaReact } from 'react-icons/fa'
 import { SiJavascript, SiNextdotjs, SiTailwindcss } from 'react-icons/si'
+import { DottedSurface } from '@/components/ui/dotted-surface'
 
 export default function Hero() {
   return (
     <section id="home" className="min-h-[68vh] md:min-h-[72vh] relative overflow-hidden bg-[#0b1220] pt-16 sm:pt-20 md:pt-24 pb-0">
+      <DottedSurface className="absolute inset-0" />
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-slate-900/20"></div>
       </div>
