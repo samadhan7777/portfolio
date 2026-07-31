@@ -8,8 +8,8 @@ export default function About() {
           <div className="relative animate-slide-left">
             <div className="relative max-w-md mx-auto">
               <div className="text-center rounded-2xl bg-[#0f172a] border border-slate-700 p-6 sm:p-8 pb-28 sm:pb-32">
-                <h2 className="text-7xl sm:text-8xl lg:text-[130px] text-sky-400 font-bold leading-none">06</h2>
-                <p className="text-slate-200 text-base sm:text-lg mt-3 sm:mt-4">Months of Experience</p>
+                <h2 className="text-7xl sm:text-8xl lg:text-[130px] text-sky-400 font-bold leading-none">01</h2>
+                <p className="text-slate-200 text-base sm:text-lg mt-3 sm:mt-4">Year of Experience</p>
               </div>
 
               <div className="absolute -right-1 sm:-right-4 bottom-0 lg:right-8 rounded-xl border border-slate-600 bg-[#1e293b]">
